@@ -1,0 +1,50 @@
+<!--Task 1: HTML template-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Ease Travel Recommendations</title>
+    <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+
+    <div class="socialMediaIcons">
+        <img src="./images/youtube_icon.jpg" alt="YouTube">
+        <img src="./images/instagram_icon.jpg" alt="Instagram">
+        <img src="./images/tiktok_icon.jpg" alt="TikTok">
+        <img src="./images/facebook_icon.jpg" alt="Facebook">
+    </div>
+    
+    <!--Task 2: Navbar-->
+    <nav>
+        <h1>Explore Ease</h1>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+            <li><input type="text" id="searchBar" placeholder="Search for vacation here">  </li>
+            <li><button id='searchBtn'>Search</button></li>
+            <li><button id='resetBtn'>Reset</button></li>
+        </ul>
+    </nav>
+
+    <!--Task 3: Home Page-->
+    <div class='backgroundImage'>
+        <div class='titleAndIntro'>
+            <h1 style="font-size: 48px;">EXPORE DREAM DESTINATION</h><br><br>
+            <p style="font-size: 24px;">
+                Introducing Explore Ease, your go-to destination for personalized travel recommendations and unforgettable adventures. Whether you're planning a weekend getaway or a month-long journey, Explore Ease has you covered with expertly curated travel guides tailored to your preferences.
+            </p>
+        </div>
+        <div class="searchTravel">
+            <div id="result">
+                <img src="./images/tokyo.jpg" alt="country-img">
+                <h2><strong>Philly, USA</strong></h2>
+                <p>You already know! Home of the philly cheese steak, Kevin Hart and the notorius 76ers.<p>
+            </div>
+        </div>
+   
+    </div>
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>

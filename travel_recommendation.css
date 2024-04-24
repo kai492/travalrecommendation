@@ -1,0 +1,122 @@
+/* Basic CSS for the form elements */
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+ 
+  
+  input[type="text"],
+  select {
+    width: 200px;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+/* 
+Task 2: Navbar
+Basic CSS for the navigation bar 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+/* 
+Task 3: Home Pagw
+Basic CSS for the back ground image 
+*/
+.backgroundImage{
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.titleAndIntro {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    padding: 20px;
+    color: white; /* Set the font color to white */
+    width: 30%;
+}
+
+.socialMediaIcons {
+    position: fixed;
+    bottom: 0%;
+    left: 10px;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMediaIcons img {
+    width: 30px; /* Set the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some spacing between the icons */
+}
+
+.searchTravel {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(10%, -60%);
+  text-align: left;
+  padding: 20px;
+  color: white; /* Set the font color to white */
+  width: 30%;
+}

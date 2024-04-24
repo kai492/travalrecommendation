@@ -1,0 +1,88 @@
+<!--Task 5: Contact us-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <style>
+    body{
+        text-align: center;
+    }
+    /* Some basic styling for demonstration purposes */
+    #contactForm {
+      max-width: 400px;
+      margin: 0px auto;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+    }
+    #contactForm button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    #contactForm button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+    
+    <div class="socialMediaIcons">
+        <img src="./images/youtube_icon.jpg" alt="YouTube">
+        <img src="./images/instagram_icon.jpg" alt="Instagram">
+        <img src="./images/tiktok_icon.jpg" alt="TikTok">
+        <img src="./images/facebook_icon.jpg" alt="Facebook">
+    </div>
+
+    <nav>
+        <h1>Explore Ease</h1>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+            <li><input type="text" id="searchBar" placeholder="Search for vacation here">  </li>
+            <li><button id='searchBtn'>Search</button></li>
+            <li><button id='resetBtn'>Reset</button></li>
+        </ul>
+    </nav>
+
+    <div class='backgroundImage'>
+
+        <div class='titleAndIntro'>
+            <h1 style="font-size: 48px;">CONTACT US</h><br><br>
+            <p style="font-size: 24px;">
+                Get in touch.
+            </p>
+        </div>    
+
+        <form id="contactForm">
+            <div>
+                <label for="name" style="color: white;">NAME</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email" style="color: white;">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message" style="color: white;">MESSAGE</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" onclick="thankyou()">Submit</button>
+        </form>
+    </div>
+  <script>
+    function thankyou(){
+        alert('Thank you for contacting us!')
+    }
+  </script>
+</body>
+</html>

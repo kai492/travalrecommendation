@@ -1,0 +1,85 @@
+<!--Task 4: About us-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <style>
+    body{
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+            color: white;
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+          }
+        
+        .team-member {
+            width: 30%;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+  </style>
+</head>
+<body>
+    
+    <div class="socialMediaIcons">
+        <img src="./images/youtube_icon.jpg" alt="YouTube">
+        <img src="./images/instagram_icon.jpg" alt="Instagram">
+        <img src="./images/tiktok_icon.jpg" alt="TikTok">
+        <img src="./images/facebook_icon.jpg" alt="Facebook">
+    </div>
+
+    <nav>
+        <h1>Explore Ease</h1>
+        <ul>
+            <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+            <li><a href="./about_us.html" id="about">About Us </a></li>
+            <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+            <li><input type="text" id="searchBar" placeholder="Search for vacation here">  </li>
+            <li><button id='searchBtn'>Search</button></li>
+            <li><button id='resetBtn'>Reset</button></li>
+        </ul>
+    </nav>
+
+    <div class='backgroundImage'>
+
+        <div class='container'>
+            <h1 style="font-size: 48px;">ABOUT US</h1><br><br>
+            <p style="font-size: 24px;">
+                At Explore Ease, we believe that travel is not just about visiting new places, but about discovering oneself in the process. Our passion for travel and exploration inspired us to create a platform that goes beyond traditional travel recommendations.
+            </p><br><br>
+            <h1 style="font-size: 48px;">Our Team</h1><br><br>
+            <div class="team-members">
+                <div class="team-member">
+                    <h3>Andre Jr. Johnson</h3>
+                    <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non magna auctor, placerat odio id, efficitur mi.</p>
+                    <button>CEO</button>
+                </div>
+                <div class="team-member">
+                    <h3>Sheldon Cooper</h3>
+                    <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non magna auctor, placerat odio id, efficitur mi.</p>
+                    <button>CFOTeam Leader</button>
+                </div>
+                <div class="team-member">
+                    <h3>Simba King</h3>
+                    <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non magna auctor, placerat odio id, efficitur mi.</p>
+                    <button>Team Leader</button>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
